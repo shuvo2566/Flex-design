@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: slateblue;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        /* small device style */
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <h2>flexBox</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita eius accusamus omnis iste? Voluptatibus consequatur maxime quis quaerat adipisci repellendus eum dicta nisi laudantium voluptatum porro, quibusdam totam expedita reiciendis!</p>
+        </div>
+        <div class="box">
+            <h3>Second Box</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quae consequuntur tenetur facere necessitatibus sit exercitationem repellendus quos quod, officiis iure id libero ut reiciendis non facilis nostrum, corporis quasi.</p>
+        </div>
+    </div>
 </body>
 </html>
